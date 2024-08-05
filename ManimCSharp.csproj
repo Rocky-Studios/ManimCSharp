@@ -10,4 +10,10 @@
     <Product>Manim C#</Product>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="BetterNumberSystem">
+      <HintPath>DLLs\BetterNumberSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
