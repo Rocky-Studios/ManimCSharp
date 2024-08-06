@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManimGUI.Manim.MObject
+namespace Manim
 {
     public class Polygon : MObject
     {

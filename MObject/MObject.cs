@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Color = System.Drawing.Color;
 
-namespace ManimGUI.Manim.MObject
+namespace Manim
 {
     /// <summary>
     /// Basically anything shown on screen
