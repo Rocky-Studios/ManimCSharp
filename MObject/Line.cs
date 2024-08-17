@@ -6,7 +6,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManimGUI.Manim.MObject
+namespace Manim.MObject
 {
     public interface ILineBase
     {
@@ -33,7 +33,7 @@ namespace ManimGUI.Manim.MObject
 
         public Number GetLength()
         {
-            return new Number(double.PositiveInfinity, unit: NumberUnit.METRE);
+            return new Number(double.PositiveInfinity, unit: UnitManager.Unit["Metre"]);
         }
     }
 
@@ -53,7 +53,7 @@ namespace ManimGUI.Manim.MObject
 
         public Number GetLength()
         {
-            return new Number(Vector2.Distance(A.Position, B.Position), unit: NumberUnit.METRE);
+            return new Number(Vector2.Distance(A.Position, B.Position), unit: UnitManager.Unit["Metre"]);
         }
     }
 
@@ -73,7 +73,7 @@ namespace ManimGUI.Manim.MObject
 
         public Number GetLength()
         {
-            return new Number(double.PositiveInfinity, unit: NumberUnit.METRE);
+            return new Number(double.PositiveInfinity, unit: UnitManager.Unit["Metre"]);
         }
     }
 
@@ -83,7 +83,7 @@ namespace ManimGUI.Manim.MObject
     public class RayAngle : MObject, ILineBase
     {
         public Point A;
-        public Number Angle = new Number(0, MeasurementType.Angle, NumberUnit.RADIAN);
+        public Number Angle = new Number(0, UnitManager.Unit["Radian"]);
 
         public RayAngle(string name, System.Drawing.Color strokeColor, Point a, Number angle, System.Drawing.Color? fillColor = null, int zIndex = 0, Vector2? position = null, Vector2? rotation = null, Vector2? scale = null) : base(name, strokeColor, fillColor, zIndex, position, rotation, scale)
         {
@@ -95,7 +95,7 @@ namespace ManimGUI.Manim.MObject
 
         public Number GetLength()
         {
-            return new Number(double.PositiveInfinity, unit: NumberUnit.METRE);
+            return new Number(double.PositiveInfinity, unit: UnitManager.Unit["Metre"]);
         }
     }
 }

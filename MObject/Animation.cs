@@ -1,11 +1,10 @@
-﻿using ManimCSharp.MObject;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Manim
+namespace Manim.MObject
 {
     /// <summary>
     /// The base interface for every visual animation

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManimCSharp.MObject
+namespace Manim.MObject
 {
     /// <summary>
     /// A timing function for a curve

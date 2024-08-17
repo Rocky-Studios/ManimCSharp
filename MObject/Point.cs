@@ -6,7 +6,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Manim
+namespace Manim.MObject
 {
     /// <summary>
     /// An infinitely small single point in space
